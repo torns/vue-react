@@ -1,14 +1,12 @@
 <template>
 
   <div>
-    <span @click="click">
-      <SimpleSlider/>
-    </span>
+    <SimpleSlider/>
   </div>
 </template>
 
 <script>
-import SimpleSlider from './test';
+import SimpleSlider from './SimpleSlider';
 import '@icedesign/base/dist/ICEDesignBase.css'
 export default {
   methods: {
