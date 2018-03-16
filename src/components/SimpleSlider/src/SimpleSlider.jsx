@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import IceContainer from '@icedesign/container';
-import { Slider } from '@icedesign/base';
+import { Slider,Button } from '@icedesign/base';
 
 const slides = [
   {
@@ -30,12 +30,16 @@ export default class SimpleSlider extends Component {
 
   constructor(props) {
     super(props);
+    console.log(props)
     this.state = {};
   }
 
   render() {
     return (
       <IceContainer>
+       <Button onClick={() => {
+         this.props.emit('来自react')
+       }}>{this.props.title}</Button>
         <Slider>
           {slides.map((item, index) => (
             <div key={index}>

@@ -1,17 +1,17 @@
 <template>
 
   <div>
-    <SimpleSlider/>
+    <SimpleSlider title="我来自Vue" :emit="click"/>
   </div>
 </template>
 
 <script>
-import SimpleSlider from './SimpleSlider';
+import SimpleSlider from './SimpleSlider/src/index';
 import '@icedesign/base/dist/ICEDesignBase.css'
 export default {
   methods: {
-    click(){
-      alert(1)
+    click(text){
+      alert(text)
     }
   },
   components: {SimpleSlider }
