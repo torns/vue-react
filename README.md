@@ -10,6 +10,12 @@
 
 3. 引入 `vuera` ，必要时（多为react 组件库所需）引入 `react` 、 `react-dom`
 
+## 注意点
+
+- vue 组件与 react 组件 通信 ：
+  - props
+  - emit 
+
 Happy Hacking!
 
 > 可以基于 ICE antd.design  element-ui 一起搞事情了！
