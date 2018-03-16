@@ -1,21 +1,15 @@
-# vue-lego
+# vue-react
 
-> A Vue.js project
+> vue 和 react 一起使用
 
-## Build Setup
+## 重点改造内容
 
-``` bash
-# install dependencies
-npm install
+1. `.babelrc` 将 `transform-vue-jsx` 改为 `transform-react-jsx`
 
-# serve with hot reload at localhost:8080
-npm run dev
+2. `build/webpack.base.conf.js` 中 为 `jsx` 添加 `` 和 `babel-loader` 支持
 
-# build for production with minification
-npm run build
+3. 引入 `vuera` ，必要时（多为react 组件库所需）引入 `react` 、 `react-dom`
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
+Happy Hacking!
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+> 可以基于 ICE antd.design  element-ui 一起搞事情了！
