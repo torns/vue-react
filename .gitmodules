@@ -1,0 +1,3 @@
+[submodule "src/ice"]
+	path = src/ice
+	url = https://github.com/alibaba/ice.git
