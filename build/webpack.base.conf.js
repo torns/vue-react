@@ -3,6 +3,7 @@ const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
+const entry = require('./entry')
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
@@ -12,9 +13,7 @@ function resolve (dir) {
 
 module.exports = {
   context: path.resolve(__dirname, '../'),
-  entry: {
-    app: './src/main.js'
-  },
+  entry: entry.getEntries(),
   output: {
     path: config.build.assetsRoot,
     filename: '[name].js',
@@ -39,6 +38,7 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         loader: 'babel-loader',
+        exclude: /node_modules/,
         include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
       },
       {

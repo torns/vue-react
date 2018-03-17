@@ -1,0 +1,30 @@
+body, html {
+  margin: 0;
+  height: 100%;
+  color: #666;
+  background: #f7f7f7;
+}
+html {
+  font-size: 100px;
+}
+body {
+  font-size: 14px;
+}
+p,h1 {
+  margin: 0;
+}
+.max_w1600 {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.h_100 {
+  height: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+.el-dialog__body {
+  padding-top: 10px;
+}
